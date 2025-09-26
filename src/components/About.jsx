@@ -1,6 +1,6 @@
 import React from 'react'
 import { motion, AnimatePresence } from "framer-motion";
-import nzn from "./assets/image/nzn.png";
+import nzn from "../assets/image/nzn.png";
 
 import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
 function About() {
