@@ -1,0 +1,6 @@
+#home{
+  font-size: 72px;
+  background: -webkit-linear-gradient(#40ffaa, #4079ff, #40ffaa, #4079ff, #40ffaa);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
