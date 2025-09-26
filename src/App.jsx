@@ -3,7 +3,7 @@ import { HiMenu, HiX } from "react-icons/hi";
 import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
 import { motion, AnimatePresence } from "framer-motion";
 import n1 from "/public/profile.jpg";
-import n2 from "/Users/nayzawnaing/My-portfolio/src/assets/image/nzn.png";
+import n2 from './assets/image/nzn.png'
 import { TypeAnimation } from "react-type-animation";
 import { MdDarkMode, MdLightMode } from "react-icons/md";
 import "./App.css";

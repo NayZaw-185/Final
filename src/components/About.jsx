@@ -1,7 +1,7 @@
 import React from 'react'
 import { motion, AnimatePresence } from "framer-motion";
-import n2 from "/Users/nayzawnaing/My-portfolio/src/assets/image/nzn.png";
-import n1 from "/public/profile.jpg";
+import nzn from "./assets/image/nzn.png";
+
 import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
 function About() {
   return (
@@ -15,7 +15,7 @@ function About() {
 
       <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-8 md:gap-10">
         <motion.img
-          src={n2}
+          src={nzn}
           alt="Nay Zaw Naing"
           className="w-32 h-32 sm:w-80 sm:h-100 md:w-56 md:h-80 object-cover border-4 shadow-xl rounded-2xl"
           animate={{ y: [0, -10, 0], rotate: [0, 1.5, -1.5, 0] }}
