@@ -4,3 +4,18 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+ .dark #box:hover{
+  box-shadow:0 8px 25px  green; 
+}
+#box:hover{
+  box-shadow:0 8px 25px #3C467B;
+}  .dark #sk:hover{
+   box-shadow:0 8px 25px green;
+}
+#sk:hover{
+   box-shadow:0 8px 25px #3C467B;
+}
+ #img:hover{
+  transition: 3s ease;
+  transform: rotateY(360deg);
+}

@@ -1,7 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { FaEnvelope, FaPhoneAlt, FaMapMarkerAlt, FaGithub, FaFacebook, FaInstagram } from "react-icons/fa";
-
 function Contact() {
   const contactInfo = [
     {
@@ -29,7 +28,6 @@ function Contact() {
     { icon: <FaFacebook />, link: "https://www.facebook.com/share/17RybCWFQ1/?mibextid=wwXIfr" },
     { icon: <FaInstagram />, link: "https://www.instagram.com/nayzaww9?igsh=azJvajUydWdqZmQ2&utm_source=qr" },
   ];
-
   const container = {
     hidden: { opacity: 0 },
     visible: {
@@ -54,8 +52,6 @@ function Contact() {
       <p className="text-lg sm:text-xl mb-10 bg-gradient-to-r from-[#3C467B] to-[#50589c] dark:from-[#40ffaa] dark:to-[#4079ff] bg-clip-text text-transparent">
         Let’s work together!
       </p>
-
-      
       <motion.div
         className="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-5xl mx-auto mb-10"
         variants={container}
@@ -77,7 +73,7 @@ function Contact() {
             {info.link ? (
               <a
                 href={info.link}
-                className="text-gray-600 dark:text-gray-300 hover:text-[#40ffaa] dark:hover:text-[#40ffaa] transition"
+                className="text-gray-600 dark:text-gray-300 hover:text-blue-500  transition"
               >
                 {info.value}
               </a>
@@ -87,8 +83,6 @@ function Contact() {
           </motion.div>
         ))}
       </motion.div>
-
-
       <motion.div
         className="flex justify-center gap-6 text-2xl dark:text-white text-gray-800"
         variants={container}
@@ -113,5 +107,4 @@ function Contact() {
     </section>
   );
 }
-
 export default Contact;

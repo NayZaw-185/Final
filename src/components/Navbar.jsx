@@ -49,7 +49,7 @@ function Navbar() {
         </motion.div>
 
         <button
-          className="md:hidden text-gray-700"
+          className="md:hidden text-gray-700 dark:text-white"
           onClick={() => setOpen(!open)}
         >
           {open ? <HiX size={28} /> : <HiMenu size={28} />}
@@ -76,7 +76,7 @@ function Navbar() {
             onClick={() => setDarkMode(!darkMode)}
             className="ml-2 text-black dark:text-white"
           >
-            {darkMode ? <MdLightMode size={20} /> : <MdDarkMode size={20} />}
+            {darkMode ? "☀️" : "🌙"}
           </button>
         </ul>
       </nav>

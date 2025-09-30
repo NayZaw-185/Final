@@ -1,9 +1,8 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-
+import "../App.css";
 function Projects() {
   const [showProjects, setShowProjects] = useState(false);
-
   const projects = [
     {
       title: "Portfolio Website",
@@ -79,7 +78,6 @@ function Projects() {
       >
         {showProjects ? "Hide Projects" : "Show Projects"}
       </button>
-
       <AnimatePresence>
         {showProjects && (
           <motion.div
@@ -93,12 +91,9 @@ function Projects() {
               <motion.div
                 key={i}
                 variants={item}
-                whileHover={{
-                  scale: 1.02,
-                  boxShadow: "0 8px 25px rgba(64,255,170,0.15)",
-                }}
+                id='box'
                 transition={{ type: "spring", stiffness: 220 }}
-                className="relative bg-white dark:bg-[#1c2137] rounded-xl p-6 text-left border border-transparent hover:border-[#40ffaa]/50 hover:shadow-[#1c213] dark:hover:border-[#40ffaa]/50 cursor-pointer shadow-md hover:shadow-xl"
+                className="relative bg-white dark:bg-[#1c2137] rounded-xl p-6 text-left border border-transparent hover:border-[#40ffaa]/50 hover:shadow-[#1c213] dark:hover:border-[#40ffaa]/50 hover:shadow-2px_4px_5px red]cursor-pointer shadow-md hover:shadow-xl"
               >
                 <h3 className="text-lg sm:text-xl font-bold dark:text-white text-gray-800 mb-2">
                   {project.title}
@@ -121,5 +116,4 @@ function Projects() {
     </section>
   );
 }
-
 export default Projects;

@@ -11,7 +11,7 @@ function BackToTop() {
   return (
     <motion.button
       onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-      className={`fixed bottom-6 right-6 dark:from-[#40ffaa] dark:to-[#4079ff] text-white p-3 rounded-full shadow-lg hover:bg-[#3C467B] transition bg-gradient-to-r from-[#3C467B] to-[#50589c]${
+      className={`fixed bottom-6 right-6 dark:from-[#40ffaa] dark:to-[#4079f] text-white p-3 rounded-full shadow-lg hover:bg-[#3C467B] transition bg-gradient-to-r from-[#3C467B] to-[#50589c]${
         show ? "opacity-100" : "opacity-0 pointer-events-none"
       }`}
       whileHover={{ scale: 1.1 }}

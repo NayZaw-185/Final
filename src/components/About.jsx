@@ -1,7 +1,6 @@
 import React from 'react'
 import { motion, AnimatePresence } from "framer-motion";
 import nzn from "../assets/image/nzn.png";
-
 import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
 function About() {
   return (
@@ -12,7 +11,6 @@ function About() {
       <h2 className="text-3xl sm:text-4xl font-bold text-center mb-10 dark:text-transparent dark:bg-clip-text dark:bg-gradient-to-r dark:from-[#40ffaa] dark:to-[#4079ff] bg-gradient-to-r from-[#3C467B] to-[#50589c] text-transparent bg-clip-text">
         About Me
       </h2>
-
       <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-8 md:gap-10">
         <motion.img
           src={nzn}
@@ -32,33 +30,28 @@ function About() {
             <strong>Tailwind CSS</strong>, and modern tools.
           </p>
           <p className="font-serif text-xl">
-            My focus is creating clean, pixel-perfect user experiences that
-            perform well across all devices. I care about usability, design
-            systems, and writing maintainable code.
+            My focus is creating <strong>clean</strong>, <strong>pixel-perfect</strong> user experiences that
+            perform well across <strong>all devices</strong>. I care about <strong>usability</strong>, <strong>design
+            systems</strong>, and <strong>writing maintainable code</strong>.
           </p>
           <p className="font-serif text-xl">
             Outside of development, I enjoy UI/UX design, tech writing, and
             contributing to open-source projects.
           </p>
-
           <div className="flex flex-wrap items-center gap-4 mt-6">
-   
             <motion.a
               href="/NayZawNaingCV.pdf" 
               download
-              className="px-6 py-3 rounded-full text-white dark:text-black dark:bg-gradient-to-r dark:from-[#40ffaa] dark:to-[#4079ff] bg-gradient-to-r from-[#3C467B] to-[#50589c] shadow-lg hover:scale-105 transition font-semibold"
+              className="px-6 py-3 rounded-full text-white dark:text-black dark:bg-gradient-to-r dark:from-[#40ffaa] dark:to-[#4079ff] bg-gradient-to-r from-[#3C467B] to-[#50589c] shadow-lg hover:scale-105 transition font-semibold w-auto h-auto"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
               Download CV
             </motion.a>
-
-           
             <div className="flex gap-4 text-2xl">
               <motion.a
-                href="https://github.com/yourgithub"
-                target="_blank"
-                rel="noopener noreferrer"
+                href="https://github.com/NayZaw-185"
+        
                 className="hover:scale-110 transition text-[#3C467B] dark:text-[#40ffaa]"
                 whileHover={{ scale: 1.2 }}
               >
@@ -66,8 +59,6 @@ function About() {
               </motion.a>
               <motion.a
                 href="https://linkedin.com/in/yourlinkedin"
-                target="_blank"
-                rel="noopener noreferrer"
                 className="hover:scale-110 transition text-[#3C467B] dark:text-[#40ffaa]"
                 whileHover={{ scale: 1.2 }}
               >
@@ -75,8 +66,7 @@ function About() {
               </motion.a>
               <motion.a
                 href="https://twitter.com/yourtwitter"
-                target="_blank"
-                rel="noopener noreferrer"
+              
                 className="hover:scale-110 transition text-[#3C467B] dark:text-[#40ffaa]"
                 whileHover={{ scale: 1.2 }}
               >
@@ -89,5 +79,4 @@ function About() {
     </section>
   );
 }
-
 export default About
